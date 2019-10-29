@@ -26,6 +26,7 @@ GEOIP_CACHE_TYPE = getattr(settings, 'GEOIP_CACHE_TYPE', 4)
 log = logging.getLogger(__file__)
 
 
+
 class Visitor(models.Model):
     session_key = models.CharField(max_length=40, primary_key=True)
     user = models.ForeignKey(
